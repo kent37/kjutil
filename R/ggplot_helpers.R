@@ -4,7 +4,7 @@
 #' @export
 #' @import ggplot2
 #' @examples
-#' qplot(mtcars$mpg) + theme_reports()
+#' ggplot2::qplot(mtcars$mpg) + theme_reports()
 theme_reports = function()
   theme_update(
   panel.background = element_rect(fill = "grey95", colour = NA),
@@ -26,7 +26,7 @@ NULL
 #' @import ggplot2
 #' @rdname legend_location
 #' @examples
-#' qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendTR()
+#' ggplot2::qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendTR()
 legendTR = function() theme(legend.justification=c(1,1), legend.position=c(1, 0.95),
       legend.background = element_blank(),
       legend.key = element_blank(), legend.box.just = "left")
@@ -37,7 +37,7 @@ legendTR = function() theme(legend.justification=c(1,1), legend.position=c(1, 0.
 #' @import ggplot2
 #' @rdname legend_location
 #' @examples
-#' qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendBR()
+#' ggplot2::qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendBR()
 legendBR = function() theme(legend.justification=c(1,0), legend.position=c(1, 0.05),
       legend.background = element_blank(),
       legend.key = element_blank(), legend.box.just = "left")
@@ -48,7 +48,7 @@ legendBR = function() theme(legend.justification=c(1,0), legend.position=c(1, 0.
 #' @import ggplot2
 #' @rdname legend_location
 #' @examples
-#' qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendBL()
+#' ggplot2::qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendBL()
 legendBL = function() theme(legend.justification=c(0,0), legend.position=c(0, 0.05),
       legend.background = element_blank(),
       legend.key = element_blank(), legend.box.just = "left")
@@ -59,7 +59,7 @@ legendBL = function() theme(legend.justification=c(0,0), legend.position=c(0, 0.
 #' @import ggplot2
 #' @rdname legend_location
 #' @examples
-#' qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendTL()
+#' ggplot2::qplot(disp, mpg, data=mtcars, color=factor(cyl)) + legendTL()
 legendTL = function() theme(legend.justification=c(0,1), legend.position=c(0, 0.95),
       legend.background = element_blank(),
       legend.key = element_blank(), legend.box.just = "left")

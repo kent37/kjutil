@@ -4,8 +4,10 @@ Title: Small utility functions
 Version: 0.1
 Date: 2015-10-18
 Authors@R: person("Kent", "Johnson", email = "kent3737@gmail.com", role = c("aut", "cre"))
-Description: Just ggplot helpers for now
+Description: Misc. functions I find useful.
 License: GPL-3
 LazyData: TRUE
 Imports:
-    ggplot2
+    ggplot2,
+    rmarkdown
+RoxygenNote: 5.0.1
