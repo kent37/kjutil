@@ -8,7 +8,7 @@
 small_format <- function(...) {
 
   # get the locations of resource files located within the package
-  css <- system.file("reports/vignette.css", package = "kjutil")
+  css <- system.file('rmarkdown', 'templates', 'small_format', 'resources', 'small_format.css', package = "kjutil")
 
   # call the base html_vignette function
   rmarkdown::html_vignette(css = css, ...)

@@ -1,0 +1,10 @@
+---
+title: "Untitled"
+author: ""
+date: '`r Sys.Date()`'
+output: kjutil::small_format
+---
+
+```{r parameters, echo=FALSE,include=FALSE,message=FALSE}
+knitr::opts_chunk$set(echo=FALSE,fig.width=10, fig.height=8, comment=NA, warning=FALSE, message=FALSE)
+```
